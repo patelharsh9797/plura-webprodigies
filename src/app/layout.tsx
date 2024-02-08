@@ -3,6 +3,7 @@ import { dark } from "@clerk/themes";
 import type { Metadata } from "next";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +17,17 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider appearance={{ baseTheme: dark }}>
-      <html lang="en">
-        <body className={GeistSans.className}>{children}</body>
+      <html lang="en" suppressHydrationWarning>
+        <body className={GeistSans.className}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </body>
       </html>
     </ClerkProvider>
   );
