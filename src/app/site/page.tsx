@@ -34,7 +34,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="mt-20 flex flex-col items-center justify-center gap-4 md:!mt-20">
+      <section className="mt-20 flex flex-col items-center justify-center gap-4 md:!mt-[10rem]">
         <h2 className="text-center text-4xl">Choose what fits you right</h2>
         <p className="text-center text-muted-foreground">
           Our straightforward pricing plans are tailored to meet your needs. If
