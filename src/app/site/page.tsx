@@ -15,9 +15,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <section className="relative flex h-full w-full flex-col items-center justify-center pt-36 ">
+      <section className="relative flex min-h-full w-full flex-col items-center justify-center pt-12">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
-        <p className="text-center">Run your agence, in one place</p>
+        <p className="relative text-center">Run your agence, in one place</p>
         <div className="relative bg-gradient-to-r from-primary to-secondary-foreground bg-clip-text text-transparent">
           <h1 className="tenx-center text-9xl font-bold md:text-[300px]">
             Plura
@@ -34,7 +34,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="mt-20 flex flex-col items-center justify-center gap-4 md:!mt-[10rem]">
+      <section className="mt-[-60px] flex flex-col items-center justify-center gap-4 md:!mt-20">
         <h2 className="text-center text-4xl">Choose what fits you right</h2>
         <p className="text-center text-muted-foreground">
           Our straightforward pricing plans are tailored to meet your needs. If

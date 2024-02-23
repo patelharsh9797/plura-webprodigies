@@ -11,7 +11,7 @@ type Props = {
 function Navigation({ user }: Props) {
   return (
     <header>
-      <main className="relative flex items-center justify-between p-4">
+      <div className="fixed top-0 left-0 right-0 z-[1000] flex items-center justify-between p-4">
         <aside className="flex items-center gap-2">
           <Image
             src={"/assets/plura-logo.svg"}
@@ -47,7 +47,7 @@ function Navigation({ user }: Props) {
           <UserButton />
           <ModeToggle />
         </aside>
-      </main>
+      </div>
     </header>
   );
 }
